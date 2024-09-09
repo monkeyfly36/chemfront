@@ -42,13 +42,13 @@ function Home() {
   const init = async () => {
     setRecommends([
       {
-        title: ['Help me study', 'vocabulary for a college entrance exam'],
-        content: `Help me study vocabulary: write a sentence for me to fill in the blank, and I'll try to pick the correct option.`
+        title: ['Help me study', 'properties of chemical element'],
+        content: `Can you tell me about the properties of Au?`
       },
-      {
-        title: ['Help me study1', `of a website's sticky header`],
-        content: `Help me study1 vocabulary: write a sentence for me to fill in the blank, and I'll try to pick the correct option.`
-      }
+      // {
+      //   title: ['Help me study1', `properties of chemical element`],
+      //   content: `Can you tell me about the properties of Au?`
+      // }
     ])
     try {
       const res = await IO_getRoleLLM()
